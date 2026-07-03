@@ -24,7 +24,7 @@ Chỉnh file **`domain-links.json`** ở thư mục gốc:
 1. Deploy 1 lần (Pages / hosting static).
 2. Trên CF → **Custom Domains** → add domain mới trỏ về cùng project.
 3. Thêm dòng domain + link vào `domain-links.json` → commit & deploy lại.
-4. Khách mở đúng domain sẽ tự gắn link tương ứng (logo, 4 cổng, redirect 5s).
+4. Khách mở đúng domain sẽ tự gắn link tương ứng (logo, 4 cổng) — chỉ chuyển khi click.
 
 ### Test local
 

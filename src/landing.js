@@ -62,18 +62,9 @@ export function runLanding() {
         return href;
     }
 
-    function scheduleRedirect(href) {
-        if (!href) {
-            return;
-        }
-        window.setTimeout(function () {
-            window.location.href = href;
-        }, 5000);
-    }
-
     function run() {
         document.body.dataset.domain = domainKeyForDisplay();
-        scheduleRedirect(applyPortalLink(domainLink()));
+        applyPortalLink(domainLink());
     }
 
     if (document.readyState === "loading") {
